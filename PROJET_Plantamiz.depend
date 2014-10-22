@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1413927142 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\affichage_menu.c
+	"plantamiz.h"
+
+1414008114 c:\users\océania\desktop\documents\projet ece\projet_plantamiz\plantamiz.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+
+1414009867 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\main.c
+	"plantamiz.h"
+
+1413742555 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\sup + couleur.c
+	"plantamiz.h"
+
+1414011397 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\creation_fichier.c
+	"plantamiz.h"
+
+1414007347 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\jouer.c
+	"plantamiz.h"
+
+1414009105 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\ouverture_fichier.c
+	"plantamiz.h"
+
