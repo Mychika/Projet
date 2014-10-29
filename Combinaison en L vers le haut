@@ -108,7 +108,7 @@ void combinaisonLdroitehauttroistrois(char matrice[10][15]) //motif en L a droit
     }
 }
 
-void combinaisonLldroitehautquatretrois(char matrice[10][15]) //motif en L à droite en haut de la ligne de 4 caractéres en lignes et 3 en colonnes
+void combinaisonLdroitehautquatretrois(char matrice[10][15]) //motif en L à droite en haut de la ligne de 4 caractéres en lignes et 3 en colonnes
 {
 
     int i; int j;
