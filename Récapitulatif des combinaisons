@@ -1,0 +1,105 @@
+void combinaisontrois(char matrice[10][15])
+{
+    combinaisoncolonnetrois(matrice);
+    combinaisonlignetrois(matrice);
+}
+
+void combinaisonquatre(char matrice[10][15])
+{
+    combinaisoncolonnequatre(matrice);
+    combinaisonlignetrois(matrice);
+}
+
+void combinaisonLtroistrois(char matrice[10][15])
+{
+    combinaisonLgauchebastroistrois(matrice);
+    combinaisonLgauchehauttroistrois(matrice);
+
+    combinaisonLdroitehauttroistrois(matrice);
+    combinaisonLdroitebastroistrois(matrice);
+}
+
+void combinaisonLtroisquatre(char matrice[10][15])
+{
+    combinaisonLgauchebastroisquatre(matrice);
+    combinaisonLgauchebasquatretrois(matrice);
+    combinaisonLgauchehautquatretrois(matrice);
+    combinaisonLgauchehauttroisquatre(matrice);
+
+    combinaisonLdroitebastroisquatre(matrice);
+    combinaisonLdroitebasquatretrois(matrice);
+    combinaisonLdroitehauttroisquatre(matrice);
+    combinaisonLdroitehautquatretrois(matrice);
+
+}
+
+void combinaisonLquatrequatre(char matrice[10][15])
+{
+    combinaisonLgauchebasquatrequatre(matrice);
+    combinaisonLgauchehautquatrequatre(matrice);
+
+    combinaisonLdroitehautquatrequatre(matrice);
+    combinaisonLdroitebasquatrequatre(matrice);
+}
+
+void combinaisonTtroistrois(char matrice[10][15])
+{
+    combinaisonTgauchetroistrois(matrice);
+    combinaisonTdroitetroistrois(matrice);
+
+    combinaisonTmilieubastroistrois(matrice);
+    combinaisonTmilieuhauttroistrois(matrice);
+}
+
+void combinaisonTtroisquatre(char matrice[10][15])
+{
+    combinaisonTgauchetroisquatre1(matrice);
+    combinaisonTgauchetroisquatre2(matrice);
+    combinaisonTgauchequatretrois(matrice);
+
+    combinaisonTdroitetroisquatre1(matrice);
+    combinaisonTdroitetroisquatre1(matrice);
+    combinaisonTdroitequatretrois(matrice);
+
+    combinaisonTmilieubasquatretrois1(matrice);
+    combinaisonTmilieubasquatretrois2(matrice);
+    combinaisonTmilieuhautquatretrois1(matrice);
+    combinaisonTmilieuhautquatretrois2(matrice);
+    combinaisonTmilieubastroisquatre(matrice);
+    combinaisonTmilieuhauttroisquatre(matrice);
+}
+
+void combinaisonTquatrequatre(char matrice[10][15])
+{
+    combinaisonTgauchequatrequatre1(matrice);
+    combinaisonTgauchequatrequatre2(matrice);
+
+    combinaisonTdroitequatrequatre1(matrice);
+    combinaisonTdroitequatrequatre2(matrice);
+
+    combinaisonTmilieubasquatrequatre1(matrice);
+    combinaisonTmilieubasquatrequatre2(matrice);
+    combinaisonTmilieuhautquatrequatre1(matrice);
+    combinaisonTmilieuhautquatrequatre2(matrice);
+}
+
+void combinaisoncroixtroistrois(matrice);
+
+void combinaisoncroixtroisquatre(char matrice[10][15])
+{
+    combinaisoncroixquatretroisgauche(matrice);
+    combinaisoncroixquatretroisdroite(matrice);
+
+    combinaisoncroixtroisquatre1(matrice);
+    combinaisoncroixtroisquatre2(matrice);
+
+}
+
+void combinaisoncroixquatrequatre(char matrice[10][15])
+{
+    combinaisoncroixquatrequatredroite1(matrice);
+    combinaisoncroixquatrequatredroite2(matrice);
+
+    combinaisoncroixquatrequatregauche1(matrice);
+    combinaisoncroixquatrequatregauche2(matrice);
+}
