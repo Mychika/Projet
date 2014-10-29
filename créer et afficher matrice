@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void creationmatrice(char matrice[10][15])
+{
+    int i;
+    int j;
+    int nbaleatoire;
+    srand(time(NULL)); //initialisation de l'horloge
+    for (i=0;i<10;i++) //lignes
+    {
+        for(j=0;j<15;j++) //colonnes
+        {
+            nbaleatoire=rand()%5; //il y a 5 lettres possibles
+            switch(nbaleatoire)
+            {
+             case 0 : matrice[i][j]=83;
+             break;
+             case 1 : matrice[i][j]=70;
+             break;
+             case 2 : matrice[i][j]=80;
+             break;
+             case 3 : matrice[i][j]=79;
+             break;
+             case 4 : matrice[i][j]=77;
+             break;
+            }
+
+        }
+    }
+
+
+}
+
+
+void affichagematrice(char matrice[10][15])
+{
+    int i; int j; //déclaration des itérateurs
+    for (i=0;i<10;i++) //lignes
+   {
+       for(j=0;j<15;j++) //colonnes
+       {
+           printf("%c ",matrice[i][j]);
+       }
+       printf("\n");
+   }
+}
+
+int main()
+{
+    char matrice[10][15];
+    creationmatrice(matrice);
+    affichagematrice(matrice);
+
+    return 0;
+}
