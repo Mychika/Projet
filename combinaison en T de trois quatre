@@ -86,7 +86,8 @@ void combinaisonTmilieubastroisquatre(char matrice[10][15])
     {
         for (j=0;j<13;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i+2][j+1])&&(matrice[i][j+]==matrice[i+3][j+1])))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&
+                (matrice[i][j+1]==matrice[i+1][j+1])&&(matrice[i][j+1]==matrice[i+2][j+1])&&(matrice[i][j+1]==matrice[i+3][j+1]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
@@ -106,7 +107,7 @@ void combinaisonTmilieuhauttroisquatre(char matrice[10][15])
     {
         for (j=0;j<13;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i-1][j+1])&&(matrice [i][j+1]==matrice[i-2][j+1])&&(matrice[i][j+]==matrice[i-3][j+1])))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i-1][j+1])&&(matrice[i][j+1]==matrice[i-2][j+1])&&(matrice[i][j+1]==matrice[i-3][j+1]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
@@ -170,7 +171,8 @@ void combinaisonTmilieuhautquatretrois1(char matrice[10][15])
     {
         for (j=0;j<12;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3]&&(matrice[i][j+1]==matrice[i-1][j+1])&&(matrice [i][j+1]==matrice[i-2][j+1]))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&
+            (matrice[i][j+1]==matrice[i-1][j+1])&&(matrice [i][j+1]==matrice[i-2][j+1]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
@@ -191,7 +193,7 @@ void combinaisonTmilieuhautquatretrois2(char matrice[10][15])
     {
         for (j=0;j<12;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3]&&(matrice[i][j+2]==matrice[i-1][j+2])&&(matrice [i][j+2]==matrice[i-2][j+2]))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+2]==matrice[i-1][j+2])&&(matrice[i][j+2]==matrice[i-2][j+2]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
@@ -212,7 +214,7 @@ void combinaisonTmilieubasquatretrois1(char matrice[10][15])
     {
         for (j=0;j<12;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3]&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i+2][j+1]))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i+2][j+1]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
@@ -233,7 +235,7 @@ void combinaisonTmilieubasquatretrois2(char matrice[10][15])
     {
         for (j=0;j<12;j++)
         {
-            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3]&&(matrice[i][j+2]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i+2][j+2]))
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+2]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i+2][j+2]))
             {
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
