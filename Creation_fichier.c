@@ -7,12 +7,18 @@ int creation_fichier()
     char pseudo[50];
     int niveau = 0;
     FILE* monfichier = NULL;
-
+    t_joueur* joueur1;
 
     // Récupération pseudo
     printf ("Entrez votre pseudo\n");
     scanf ("%s", tab);
     strcpy (pseudo,tab);
+
+    // Initialisation t_joueur
+    strcpy (joueur1->prenom,tab);
+    joueur1->niveau = 1;
+    joueur1->vie = 5;
+
 
     monfichier = fopen(strcat (tab,".txt"),"r");
 

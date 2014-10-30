@@ -38,7 +38,10 @@ int main()
                         break;
 
                     case 1 :
-                        niveau = ouverture_fichier();
+                        do
+                        {
+                            niveau = ouverture_fichier();
+                        } while (niveau < 1);
                         b = 0;
                         // Ici sspg Jouer
                         break;
