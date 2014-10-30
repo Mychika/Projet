@@ -1,0 +1,76 @@
+void combinaisonTgauchetroistrois(char matrice[10][15]) //motif en T à gauche de la ligne de 3 caractéres en ligne et en colonne
+{
+    int i; int j;
+    for (i=1;i<9;i++)
+    {
+        for (j=0;j<13;j++)
+        {
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j]==matrice[i+1][j])&&(matrice [i][j]==matrice[i-1][j]))
+            {
+                matrice[i][j]=' ';
+                matrice[i][j+1]=' ' ;
+                matrice[i][j+2]=' ';
+                matrice[i+1][j]=' ';
+                matrice[i-1][j]=' ';
+            }
+        }
+    }
+
+}
+
+void combinaisonTdroitetroistrois (char matrice[10][15]) //motif en T à droite de la ligne de 3 caractéres en ligne et en colonne
+{
+    int i; int j;
+    for (i=1;i<9;i++)
+    {
+        for (j=0;j<13;j++)
+        {
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i-1][j+2]))
+            {
+                matrice[i][j]=' ';
+                matrice[i][j+1]=' ' ;
+                matrice[i][j+2]=' ';
+                matrice[i+1][j+2]=' ';
+                matrice[i-1][j+2]=' ';
+            }
+        }
+    }
+}
+
+void combinaisonTmilieubastroistrois (char matrice [10][15]) //motif en T au milieu de ligne vers le bas de 3 caractéres en ligne et en colonne
+{
+    int i; int j;
+    for (i=0;i<8;i++)
+    {
+        for (j=0;j<13;j++)
+        {
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i+2][j+1]))
+            {
+                matrice[i][j]=' ';
+                matrice[i][j+1]=' ' ;
+                matrice[i][j+2]=' ';
+                matrice[i+1][j+1]=' ';
+                matrice[i+2][j+1]=' ';
+            }
+        }
+    }
+}
+
+void combinaisonTmilieuhauttroistrois (char matrice [10][15]) //motif en T au milieu de ligne vers le haut de 3 caractéres en ligne et en colonne
+{
+    int i; int j;
+    for (i=2;i<10;i++)
+    {
+        for (j=0;j<13;j++)
+        {
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i-1][j+1])&&(matrice [i][j+1]==matrice[i-2][j+1]))
+            {
+                matrice[i][j]=' ';
+                matrice[i][j+1]=' ' ;
+                matrice[i][j+2]=' ';
+                matrice[i-1][j+1]=' ';
+                matrice[i-2][j+1]=' ';
+            }
+        }
+    }
+}

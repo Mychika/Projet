@@ -1,0 +1,38 @@
+void combinaisoncolonnequatre(char matrice[10][15])
+{
+    int i; int j;
+
+    for (i=0;i<7;i++)
+    {
+        for (j=0;j<15;j++)
+        {
+            if ((matrice[i][j]==matrice[i+1][j])&&(matrice[i+1][j]==matrice[i+2][j])&&(matrice[i+2][j]==matrice[i+3][j]))
+            {
+                matrice[i][j]=' ';
+                matrice[i+1][j]=' ';
+                matrice[i+2][j]=' ';
+                matrice[i+3][j]=' ';
+            }
+        }
+    }
+
+}
+
+void combinaisonlignequatre(char matrice[10][15])
+{
+    int i; int j;
+
+    for (i=0;i<10;i++)
+    {
+        for (j=0;j<12;j++)
+        {
+            if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3]))
+            {
+                matrice[i][j]=' ';
+                matrice[i][j+1]=' ';
+                matrice[i][j+2]=' ';
+                matrice[i][j+3]=' ';
+            }
+        }
+    }
+}
