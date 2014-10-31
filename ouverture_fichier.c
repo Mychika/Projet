@@ -1,6 +1,6 @@
 #include "plantamiz.h"
 
-int ouverture_fichier()
+int ouverture_fichier(t_joueur* joueur)
 {
     supr();
     // Décla var
@@ -9,10 +9,9 @@ int ouverture_fichier()
     int niveau = 0;
     char tab [50];
     char pseudo[50];
-    t_joueur* joueur2;
 
     // Récupération pseudo
-    printf ("Bienvenu.\n\nEntrez votre pseudo\n");
+    printf ("Bonjour\n\nEntrez votre pseudo\n");
     scanf ("%s", tab);
 
     monfichier = fopen(strcat (tab,".txt"),"r");
@@ -20,11 +19,9 @@ int ouverture_fichier()
     // Si le fichier n'existe pas.
     if (monfichier == NULL)
     {
-        printf ("Ce pseudo n'existe pas, reessayer.\n");
-        for (j =0; j < 700500000; j++)
-        {
-            continue;
-        }
+        printf ("Ce pseudo n'existe pas, reessayez.\n");
+
+        getch();
     }
     else
     {
@@ -32,9 +29,9 @@ int ouverture_fichier()
         fscanf (monfichier,"%d",&niveau);
 
         // Récupération pour t-joueur
-        strcpy (joueur2->prenom,pseudo);
-        joueur2->niveau = niveau;
-        joueur2->vie = 5;
+        strcpy (joueur->prenom,pseudo);
+        joueur->niveau = niveau;
+        joueur->vie = 5;
 
         fclose(monfichier);
 

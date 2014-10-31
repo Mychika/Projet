@@ -34,17 +34,41 @@
 		<Unit filename="Affichage_menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Affichage_transition_gagne.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Affichage_transition_perdu.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="Creation_fichier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Creer_et_afficher_matrice.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Jouer.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Plantamiz.h" />
+		<Unit filename="Tombage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Transition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="changer_de_place.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initialisation_contrat.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ouverture_fichier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sauvegarde_fichier.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sup_et_couleur.c">

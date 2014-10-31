@@ -1,23 +1,22 @@
 #include "plantamiz.h"
 
-int creation_fichier()
+int creation_fichier(t_joueur* joueur)
 {
     supr();
     char tab[50];
     char pseudo[50];
     int niveau = 0;
     FILE* monfichier = NULL;
-    t_joueur* joueur1;
 
     // Récupération pseudo
-    printf ("Entrez votre pseudo\n");
+    printf ("Bonjour\n\nEntrez votre pseudo\n");
     scanf ("%s", tab);
     strcpy (pseudo,tab);
 
     // Initialisation t_joueur
-    strcpy (joueur1->prenom,tab);
-    joueur1->niveau = 1;
-    joueur1->vie = 5;
+    strcpy (joueur->prenom,tab);
+    joueur->niveau = 1;
+    joueur->vie = 5;
 
 
     monfichier = fopen(strcat (tab,".txt"),"r");
@@ -43,10 +42,8 @@ int creation_fichier()
         int j = 0;
         printf ("Ce pseudo existe, veuillez en taper un autre.\n");
 
-        for (j =0; j < 700500000; j++)
-        {
-            continue;
-        }
+        getch();
+
         fclose (monfichier);
     }
 

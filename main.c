@@ -2,11 +2,21 @@
 
 int main()
 {
+    srand(time(NULL)); //initialisation de l'horloge
+
     console = GetStdHandle(STD_OUTPUT_HANDLE);
     int menu_pos = 0;
     char key = 'a';
     int b = 1;
-    int niveau;
+    int niveau = 0;
+
+    // Initialisation var globale du curseur
+    curseur.x = 0 ;
+    curseur.y = 0;
+
+    // Création d'un t_joueur, t_contrat
+    t_joueur joueur;
+    t_contrat* contrat1 = malloc(sizeof(t_contrat));
 
     // Récupération du déplacement du curseur par le joueur
     while (b)
@@ -32,18 +42,17 @@ int main()
                     case 0 :
                         do
                         {
-                            niveau = creation_fichier();
+                            niveau = creation_fichier(&joueur);
                         } while (niveau < 1);
-                        // Ici sspg Jouer
+                        jouer (&joueur,contrat1);
                         break;
 
                     case 1 :
                         do
                         {
-                            niveau = ouverture_fichier();
+                            niveau = ouverture_fichier(&joueur);
                         } while (niveau < 1);
-                        b = 0;
-                        // Ici sspg Jouer
+                        jouer (&joueur,contrat1);
                         break;
 
                     case 2 :

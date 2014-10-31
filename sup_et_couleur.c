@@ -1,5 +1,6 @@
 #include "plantamiz.h"
 
+
 void supr()
 {
 system("cls");

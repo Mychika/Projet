@@ -1,50 +1,69 @@
 #include "plantamiz.h"
 
 
-//void jouer()
-//{
+void jouer(t_joueur* joueur,t_contrat* contrat1)
+{
+    // Décla var
+    char matrice[10][15];
+    char key = 0;
+    int b = 1;
 
-    // Appeler sspg créer matrice         ==> Vic
-    // Appeler sspg void Initialise_contrat(int niveau)    ==> Vic
-    // Appeler affiche_matrice                  //
-        // Appeler supr                         //    ==> Victoria
-        // Boucle affiche tab[i][j]             //
-        // Appeler sspg affiche_contrat         //
+    // Initialisation du jeu
+    creation_matrice (matrice);
+    initialisation_contrat (joueur,contrat1);
 
-    //do
-    //{
-        // b = 1
-        // c = 1
-        //boucle while ( (b = 1) && (c = 1))
-        //{
-            // Appeler sspg mangeage de fruit/comptage points               //
-                // Appeler affiche_matrice                                  // ==> Océane
-                // retourne b = 1 si a fait qqc et 0 sinon                  //
+    //while (mangeage)
+    while(tombage(matrice))
+    {
+    }
 
+    do
+    {
+     // Initialisation de la boucle
+    affichage_matrice (matrice,contrat1);
 
+        //boucle while (mangeage)
+            // Appeler affiche_matrice
 
-                // Appeler sspg tombage                                     //
-                    // Appeler affiche_matrice                              //  ==> Victoria
-                    // retourne c = 1 si a fait qqc et 0 sinon              //
-
-        //}
-
-        // Appeler déplacement du curseur           //
-          // key = 0                                //
-          // Boucle while(key != ' ')               //
-            // key = getch()                        //
-            // switch(key)                          //
-                // case'2':                         //      ==> Vic
-                // ...........                      //
-                // case ' ':                        //
-                    // sspg selection_fruit()       //
-                    // sspg changeage de place      //
-                    // sspg comptage coups          //
+           // while(tombage)
+                // Affiche matrice
 
 
-    //}
-    //while((t_contrat.coups == 0) || ( (t_contrat.fraises == 0) && (t_contrat.pommes == 0) && (t_contrat.soleils == 0) && (t_contrat.oignons == 0) && (t_contrat.mandarines == 0)));
+        // Déplacement du curseur
+        while(b)
+        {
 
-    // Appeler sspg transition     ==> Océ
+            key = getch();
+            switch(key)
+            {
+                case '2':
+                    curseur.y = (curseur.y + 1) %10;
+                    affichage_matrice (matrice,contrat1);
+                    break;
+                case '8':
+                    curseur.y = (curseur.y + 9) %10;
+                    affichage_matrice (matrice,contrat1);
+                    break;
+                case '6':
+                    curseur.x = (curseur.x + 1) %15;
+                    affichage_matrice (matrice,contrat1);
+                    break;
+                case '4':
+                    curseur.x = (curseur.x + 14) %15;
+                    affichage_matrice (matrice,contrat1);
+                    break;
+                case ' ':
+                    matrice[curseur.y][curseur.x] = matrice[curseur.y][curseur.x] - 'A' + 'a';
+                    affichage_matrice (matrice,contrat1);
+                    b = changer_de_place(matrice);
+                    affichage_matrice (matrice,contrat1);
+                    getch();
+                    break;
+            }
+        }
+    }
+    while((contrat1->coups > 0) || ((contrat1->fraises > 0) && (contrat1->pommes > 0) && (contrat1->soleils > 0) && (contrat1->oignons > 0) && (contrat1->mandarines > 0)));
 
-//}
+    // Transition
+    transition(contrat1,&joueur);
+}
