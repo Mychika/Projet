@@ -15,8 +15,8 @@ void initialisation_contrat (t_joueur* joueur,t_contrat* contrat1)
     if (joueur->niveau == 2)
     {
         contrat1->soleils = 0;
-        contrat1->fraises = 0;
-        contrat1->pommes = 0;
+        contrat1->fraises = 2;
+        contrat1->pommes = 45;
         contrat1->oignons = 12;
         contrat1->mandarines = 0;
         contrat1->coups = 0;

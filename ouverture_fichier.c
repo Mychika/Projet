@@ -31,7 +31,8 @@ int ouverture_fichier(t_joueur* joueur)
         // Récupération pour t-joueur
         strcpy (joueur->prenom,pseudo);
         joueur->niveau = niveau;
-        joueur->vie = 5;
+        joueur->vie = 5
+        ;
 
         fclose(monfichier);
 

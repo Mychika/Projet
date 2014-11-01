@@ -53,7 +53,7 @@ void transition(t_contrat* contrat,t_joueur* joueur)
                                 break;
 
                             case 1 :
-                                sauvegarde_fichier(&joueur);
+                                sauvegarde_fichier(joueur);
                                 c = 0;
                                 break;
                         }
@@ -65,7 +65,7 @@ void transition(t_contrat* contrat,t_joueur* joueur)
     // Si le joueur a gagné
     else
     {
-        joueur->niveau = joueur->niveau + 1;
+        joueur->niveau++;
 
         setColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
         printf("\n\n\n\tVous avez reussi ce niveau!!\n");
@@ -97,7 +97,7 @@ void transition(t_contrat* contrat,t_joueur* joueur)
                             break;
 
                         case 1 :
-                            sauvegarde_fichier(&joueur);
+                            sauvegarde_fichier(joueur);
                             c = 0;
                             break;
                     }

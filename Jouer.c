@@ -19,20 +19,11 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
 
     do
     {
-     // Initialisation de la boucle
-    affichage_matrice (matrice,contrat1);
-
-        //boucle while (mangeage)
-            // Appeler affiche_matrice
-
-           // while(tombage)
-                // Affiche matrice
-
-
+        // Initialisation de la boucle
+        affichage_matrice (matrice,contrat1);
         // Déplacement du curseur
         while(b)
         {
-
             key = getch();
             switch(key)
             {
@@ -61,9 +52,15 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
                     break;
             }
         }
+
+        //boucle while (mangeage)
+            // Appeler affiche_matrice
+
+           // while(tombage)
+                // Affiche matrice
     }
     while((contrat1->coups > 0) || ((contrat1->fraises > 0) && (contrat1->pommes > 0) && (contrat1->soleils > 0) && (contrat1->oignons > 0) && (contrat1->mandarines > 0)));
 
     // Transition
-    transition(contrat1,&joueur);
+    transition(contrat1,joueur);
 }
