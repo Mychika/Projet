@@ -66,6 +66,7 @@ void transition(t_contrat* contrat,t_joueur* joueur)
     else
     {
         joueur->niveau++;
+        joueur->vie = 5;
         if (joueur->niveau > 4)
         {
             setColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
