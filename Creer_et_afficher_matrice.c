@@ -49,41 +49,41 @@ void affichage_matrice(char matrice[10][15],t_contrat* contrat1)
                 if (matrice[i][j] == 'S' || matrice[i][j] == 's')
                 {
                 setColor(FOREGROUND_RED | FOREGROUND_INTENSITY | surligne);
-                printf("%c",matrice[i][j]);
+                printf("%c ",matrice[i][j]);
                 setColor(FOREGROUND_WHITE);
                 }
 
                 if (matrice[i][j] == 'F' || matrice[i][j] == 'f')
                 {
                 setColor(FOREGROUND_GREEN | FOREGROUND_INTENSITY | surligne);
-                printf("%c",matrice[i][j]);
+                printf("%c ",matrice[i][j]);
                 setColor(FOREGROUND_WHITE);
                 }
 
                 if (matrice[i][j] == 'P' || matrice[i][j] == 'p')
                 {
                 setColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY | surligne);
-                printf("%c",matrice[i][j]);
+                printf("%c ",matrice[i][j]);
                 setColor(FOREGROUND_WHITE);
                 }
 
                 if (matrice[i][j] == 'O' || matrice[i][j] == 'o')
                 {
                 setColor(FOREGROUND_PURPLE | FOREGROUND_INTENSITY | surligne);
-                printf("%c",matrice[i][j]);
+                printf("%c ",matrice[i][j]);
                 setColor(FOREGROUND_WHITE);
                 }
 
                 if (matrice[i][j] == 'M' || matrice[i][j] == 'm')
                 {
                 setColor(FOREGROUND_CYAN | FOREGROUND_INTENSITY | surligne);
-                printf("%c",matrice[i][j]);
+                printf("%c ",matrice[i][j]);
                 setColor(FOREGROUND_WHITE);
                 }
 
                 if (matrice[i][j] == ' ')
                 {
-                    printf("%c",matrice[i][j]);
+                    printf("%c ",matrice[i][j]);
                 }
             }
         printf("\n");
