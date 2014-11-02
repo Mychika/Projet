@@ -115,3 +115,68 @@
 1414943222 source:c:\users\victoria\desktop\projet\transition.c
 	"plantamiz.h"
 
+1414951051 source:c:\users\goombi\desktop\plantamiz\projet\affichage_menu.c
+	"plantamiz.h"
+
+1414959666 c:\users\goombi\desktop\plantamiz\projet\plantamiz.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+
+1414951051 source:c:\users\goombi\desktop\plantamiz\projet\affichage_transition_gagne.c
+	"plantamiz.h"
+
+1414951051 source:c:\users\goombi\desktop\plantamiz\projet\affichage_transition_perdu.c
+	"plantamiz.h"
+
+1414951051 source:c:\users\goombi\desktop\plantamiz\projet\creation_fichier.c
+	"plantamiz.h"
+
+1414951732 source:c:\users\goombi\desktop\plantamiz\projet\creer_et_afficher_matrice.c
+	"plantamiz.h"
+
+1414960257 source:c:\users\goombi\desktop\plantamiz\projet\jouer.c
+	"plantamiz.h"
+
+1414956675 source:c:\users\goombi\desktop\plantamiz\projet\tombage.c
+	"plantamiz.h"
+
+1414951051 source:c:\users\goombi\desktop\plantamiz\projet\transition.c
+	"plantamiz.h"
+
+1414951732 source:c:\users\goombi\desktop\plantamiz\projet\changer_de_place.c
+	"plantamiz.h"
+
+1414959998 source:c:\users\goombi\desktop\plantamiz\projet\initialisation_contrat.c
+	"plantamiz.h"
+
+1414951054 source:c:\users\goombi\desktop\plantamiz\projet\main.c
+	"plantamiz.h"
+
+1414951055 source:c:\users\goombi\desktop\plantamiz\projet\sup_et_couleur.c
+	"plantamiz.h"
+
+1414951055 source:c:\users\goombi\desktop\plantamiz\projet\ouverture_fichier.c
+	"plantamiz.h"
+
+1414951055 source:c:\users\goombi\desktop\plantamiz\projet\sauvegarde_fichier.c
+	"plantamiz.h"
+
+1414956411 source:c:\users\goombi\desktop\plantamiz\projet\combinaisonl.c
+	"plantamiz.h"
+
+1414956411 source:c:\users\goombi\desktop\plantamiz\projet\combinaisont.c
+	"plantamiz.h"
+
+1414956411 source:c:\users\goombi\desktop\plantamiz\projet\combinaisoncroix.c
+	"plantamiz.h"
+
+1414958712 source:c:\users\goombi\desktop\plantamiz\projet\combinaisonlineaire.c
+	"plantamiz.h"
+
+1414958798 source:c:\users\goombi\desktop\plantamiz\projet\mange.c
+	"plantamiz.h"
+

@@ -7,17 +7,21 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/PROJET_Plantamiz" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
+				<Option output="bin\Debug\PROJET_Plantamiz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add option="-std=c99" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/PROJET_Plantamiz" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="bin\Release\PROJET_Plantamiz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -59,10 +63,25 @@
 		<Unit filename="changer_de_place.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="combinaisonL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="combinaisonT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="combinaisoncroix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="combinaisonlineaire.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="initialisation_contrat.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mange.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ouverture_fichier.c">

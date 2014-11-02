@@ -1,79 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Transition.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2135" topLine="78" />
-		</Cursor>
+	<File name="Affichage_menu.c" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Creer_et_afficher_matrice.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3085" topLine="62" />
-		</Cursor>
+	<File name="Affichage_transition_gagne.c" open="0" top="0" tabpos="13">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="changer_de_place.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2412" topLine="36" />
-		</Cursor>
+	<File name="Affichage_transition_perdu.c" open="0" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Creation_fichier.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="582" topLine="19" />
-		</Cursor>
+	<File name="Creation_fichier.c" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="sup_et_couleur.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="121" topLine="0" />
-		</Cursor>
+	<File name="Creer_et_afficher_matrice.c" open="1" top="0" tabpos="10">
+		<Cursor position="2728" topLine="80" />
 	</File>
-	<File name="Affichage_menu.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Jouer.c" open="1" top="0" tabpos="8">
+		<Cursor position="1538" topLine="44" />
 	</File>
-	<File name="Affichage_transition_gagne.c" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="667" topLine="9" />
-		</Cursor>
+	<File name="Plantamiz.h" open="1" top="0" tabpos="3">
+		<Cursor position="1508" topLine="115" />
 	</File>
-	<File name="initialisation_contrat.c" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="639" topLine="0" />
-		</Cursor>
+	<File name="Tombage.c" open="1" top="0" tabpos="13">
+		<Cursor position="385" topLine="2" />
 	</File>
-	<File name="Jouer.c" open="1" top="1" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2029" topLine="37" />
-		</Cursor>
+	<File name="Transition.c" open="1" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plantamiz.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="564" topLine="23" />
-		</Cursor>
+	<File name="changer_de_place.c" open="1" top="0" tabpos="11">
+		<Cursor position="186" topLine="0" />
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="436" topLine="0" />
-		</Cursor>
+	<File name="combinaisonL.c" open="1" top="0" tabpos="17">
+		<Cursor position="4859" topLine="109" />
 	</File>
-	<File name="Affichage_transition_perdu.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="647" topLine="3" />
-		</Cursor>
+	<File name="combinaisonT.c" open="1" top="0" tabpos="16">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Tombage.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1048" topLine="0" />
-		</Cursor>
+	<File name="combinaisoncroix.c" open="1" top="0" tabpos="15">
+		<Cursor position="3088" topLine="318" />
 	</File>
-	<File name="sauvegarde_fichier.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="196" topLine="0" />
-		</Cursor>
+	<File name="combinaisonlineaire.c" open="1" top="1" tabpos="14">
+		<Cursor position="7166" topLine="122" />
 	</File>
-	<File name="ouverture_fichier.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="543" topLine="11" />
-		</Cursor>
+	<File name="initialisation_contrat.c" open="1" top="0" tabpos="6">
+		<Cursor position="568" topLine="4" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="mange.c" open="1" top="0" tabpos="12">
+		<Cursor position="174" topLine="0" />
+	</File>
+	<File name="ouverture_fichier.c" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="sauvegarde_fichier.c" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="sup_et_couleur.c" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

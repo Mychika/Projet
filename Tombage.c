@@ -14,6 +14,7 @@ int tombage (char tab[10][15])
             if (tab[i][j] == ' ')
             {
                 tab[i][j] = tab[i-1][j];
+                tab[i-1][j] = ' ';
                 b = 1;
             }
         }

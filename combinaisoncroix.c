@@ -2,22 +2,23 @@
 
 int combinaisoncroixtroistrois(char matrice[10][15],t_contrat* contrat1)
 {
-    {
+    int r = 0;
     int i; int j;
     int motifidentique;
+
     for (i=1;i<9;i++)
     {
         for (j=0;j<13;j++)
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
                 matrice[i+1][j+1]=' ';
                 matrice[i-1][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(3+3)*2;
@@ -31,18 +32,19 @@ int combinaisoncroixtroistrois(char matrice[10][15],t_contrat* contrat1)
                     case 77 : contrat1->mandarines=contrat1->mandarines-(3+3)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
 
             }
 
         }
     }
-}
+
+    return r;
 }
 
 int combinaisoncroixtroisquatre1(char matrice[10][15],t_contrat* contrat1)
 {
-    {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=1;i<8;i++)
@@ -51,6 +53,7 @@ int combinaisoncroixtroisquatre1(char matrice[10][15],t_contrat* contrat1)
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1])&&(matrice[i][j+1]==matrice[i+2][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -58,7 +61,6 @@ int combinaisoncroixtroisquatre1(char matrice[10][15],t_contrat* contrat1)
                 matrice[i-1][j+1]=' ';
                 matrice[i+2][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
@@ -72,16 +74,17 @@ int combinaisoncroixtroisquatre1(char matrice[10][15],t_contrat* contrat1)
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
             }
         }
     }
-}
+
+    return r;
 }
 
 int combinaisoncroixtroisquatre2(char matrice[10][15],t_contrat* contrat1)
 {
-    {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=2;i<9;i++)
@@ -90,6 +93,7 @@ int combinaisoncroixtroisquatre2(char matrice[10][15],t_contrat* contrat1)
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1])&&(matrice[i][j+1]==matrice[i-2][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -97,7 +101,6 @@ int combinaisoncroixtroisquatre2(char matrice[10][15],t_contrat* contrat1)
                 matrice[i-1][j+1]=' ';
                 matrice[i-2][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
@@ -111,15 +114,17 @@ int combinaisoncroixtroisquatre2(char matrice[10][15],t_contrat* contrat1)
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
             }
         }
     }
-}
+
+    return r;
 }
 
 int combinaisoncroixquatretroisgauche(char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=1;i<9;i++)
@@ -128,6 +133,7 @@ int combinaisoncroixquatretroisgauche(char matrice[10][15],t_contrat* contrat1)
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -135,7 +141,6 @@ int combinaisoncroixquatretroisgauche(char matrice[10][15],t_contrat* contrat1)
                 matrice[i+1][j+1]=' ';
                 matrice[i-1][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
@@ -149,15 +154,18 @@ int combinaisoncroixquatretroisgauche(char matrice[10][15],t_contrat* contrat1)
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
 
             }
         }
     }
+
+    return r;
 }
 
 int combinaisoncroixquatretroisdroite (char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=1;i<9;i++)
@@ -166,6 +174,7 @@ int combinaisoncroixquatretroisdroite (char matrice[10][15],t_contrat* contrat1)
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+2]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i-1][j+2]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -173,7 +182,6 @@ int combinaisoncroixquatretroisdroite (char matrice[10][15],t_contrat* contrat1)
                 matrice[i+1][j+2]=' ';
                 matrice[i-1][j+2]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
@@ -187,15 +195,18 @@ int combinaisoncroixquatretroisdroite (char matrice[10][15],t_contrat* contrat1)
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
 
             }
         }
     }
+
+    return r;
 }
 
 int combinaisoncroixquatrequatregauche1(char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=1;i<8;i++)
@@ -204,6 +215,7 @@ int combinaisoncroixquatrequatregauche1(char matrice[10][15],t_contrat* contrat1
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1])&&(matrice[i][j+1]==matrice[i+2][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -212,7 +224,6 @@ int combinaisoncroixquatrequatregauche1(char matrice[10][15],t_contrat* contrat1
                 matrice[i-1][j+1]=' ';
                 matrice[i+2][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
@@ -226,15 +237,17 @@ int combinaisoncroixquatrequatregauche1(char matrice[10][15],t_contrat* contrat1
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
-
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
             }
         }
     }
+
+    return r;
 }
 
 int combinaisoncroixquatrequatregauche2(char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=2;i<9;i++)
@@ -243,6 +256,7 @@ int combinaisoncroixquatrequatregauche2(char matrice[10][15],t_contrat* contrat1
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+1])&&(matrice [i][j+1]==matrice[i-1][j+1])&&(matrice[i][j+1]==matrice[i-2][j+1]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -251,7 +265,6 @@ int combinaisoncroixquatrequatregauche2(char matrice[10][15],t_contrat* contrat1
                 matrice[i-1][j+1]=' ';
                 matrice[i-2][j+1]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
@@ -265,15 +278,17 @@ int combinaisoncroixquatrequatregauche2(char matrice[10][15],t_contrat* contrat1
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
-
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
             }
         }
     }
+
+    return r;
 }
 
 int combinaisoncroixquatrequatredroite1(char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
     for (i=1;i<8;i++)
@@ -282,6 +297,7 @@ int combinaisoncroixquatrequatredroite1(char matrice[10][15],t_contrat* contrat1
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i-1][j+2])&&(matrice[i][j+2]==matrice[i+2][j+2]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -290,7 +306,6 @@ int combinaisoncroixquatrequatredroite1(char matrice[10][15],t_contrat* contrat1
                 matrice[i-1][j+2]=' ';
                 matrice[i+2][j+2]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
@@ -304,15 +319,18 @@ int combinaisoncroixquatrequatredroite1(char matrice[10][15],t_contrat* contrat1
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
 
             }
         }
     }
+
+    return r;
 }
 
 int combinaisoncroixquatrequatredroite2(char matrice[10][15],t_contrat* contrat1)
 {
+    int r = 0;
     int i; int j;
     int motifidentique;
 
@@ -322,6 +340,7 @@ int combinaisoncroixquatrequatredroite2(char matrice[10][15],t_contrat* contrat1
         {
             if ((matrice[i][j]==matrice[i][j+1])&&(matrice[i][j+1]==matrice[i][j+2])&&(matrice[i][j+2]==matrice[i][j+3])&&(matrice[i][j+1]==matrice[i+1][j+2])&&(matrice [i][j+2]==matrice[i-1][j+2])&&(matrice[i][j+2]==matrice[i-2][j+2]))
             {
+                motifidentique=matrice[i][j];
                 matrice[i][j]=' ';
                 matrice[i][j+1]=' ' ;
                 matrice[i][j+2]=' ';
@@ -330,7 +349,6 @@ int combinaisoncroixquatrequatredroite2(char matrice[10][15],t_contrat* contrat1
                 matrice[i-1][j+2]=' ';
                 matrice[i-2][j+2]=' ';
 
-                motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
                     case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
@@ -344,9 +362,11 @@ int combinaisoncroixquatrequatredroite2(char matrice[10][15],t_contrat* contrat1
                     case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
-                return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
+                r = 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
 
             }
         }
     }
+
+    return r;
 }

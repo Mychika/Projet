@@ -17,7 +17,12 @@ int changer_de_place(char matrice[10][15],t_contrat* contrat1)
                     matrice[curseur.y][curseur.x] = matrice[curseur.y+1][curseur.x];
                     matrice[curseur.y+1][curseur.x] = a;
                     matrice[curseur.y+1][curseur.x] = matrice[curseur.y+1][curseur.x] + 'A' - 'a';
+
                     contrat1->coups--;
+                    if (contrat1->coups <= 0)
+                    {
+                        contrat1->coups = 0;
+                    }
                     b = 0;
                     c = 0;
                 }
@@ -29,7 +34,12 @@ int changer_de_place(char matrice[10][15],t_contrat* contrat1)
                     matrice[curseur.y][curseur.x] = matrice[curseur.y-1][curseur.x];
                     matrice[curseur.y-1][curseur.x] = a;
                     matrice[curseur.y-1][curseur.x] = matrice[curseur.y-1][curseur.x] +'A' - 'a';
+
                     contrat1->coups--;
+                    if (contrat1->coups <= 0)
+                    {
+                        contrat1->coups = 0;
+                    }
                     b = 0;
                     c = 0;
                 }
@@ -41,7 +51,12 @@ int changer_de_place(char matrice[10][15],t_contrat* contrat1)
                     matrice[curseur.y][curseur.x] = matrice[curseur.y][curseur.x-1];
                     matrice[curseur.y][curseur.x-1] = a;
                     matrice[curseur.y][curseur.x-1] = matrice[curseur.y][curseur.x-1] + 'A' - 'a';
+
                     contrat1->coups--;
+                    if (contrat1->coups <= 0)
+                    {
+                        contrat1->coups = 0;
+                    }
                     b = 0;
                     c = 0;
                 }
@@ -53,7 +68,12 @@ int changer_de_place(char matrice[10][15],t_contrat* contrat1)
                     matrice[curseur.y][curseur.x] = matrice[curseur.y][curseur.x+1];
                     matrice[curseur.y][curseur.x+1] = a;
                     matrice[curseur.y][curseur.x+1] = matrice[curseur.y][curseur.x+1] +'A' - 'a';
+
                     contrat1->coups--;
+                    if (contrat1->coups <= 0)
+                    {
+                        contrat1->coups = 0;
+                    }
                     b = 0;
                     c = 0;
                 }

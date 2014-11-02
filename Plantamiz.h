@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <conio.h>
 #include <string.h>
 #include <time.h>
 
@@ -53,6 +54,7 @@ void affiche_transition_gagne(int transition_pos);
 void transition(t_contrat* contrat,t_joueur* joueur);
 void sauvegarde_fichier(t_joueur*joueur);
 int changer_de_place(char matrice[10][15],t_contrat* contrat1);
+void attendre();
 
 int mange(char matrice[10][15],t_contrat* contrat1);
     int combinaisoncolonnecinq(char matrice[10][15], t_contrat* contrat1);
@@ -121,7 +123,7 @@ int mange(char matrice[10][15],t_contrat* contrat1);
 
     //int combinaison de 4
     int combinaisoncolonnequatre(char matrice[10][15], t_contrat* contrat1);
-    int combinaisonlignetrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonlignequatre(char matrice[10][15], t_contrat* contrat1);
 
     //int combinaison de 3
     int combinaisoncolonnetrois(char matrice[10][15], t_contrat* contrat1);
