@@ -12,15 +12,19 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
     creation_matrice (matrice);
     initialisation_contrat (joueur,contrat1);
 
-    //while (mangeage)
-    while(tombage(matrice))
-    {
-    }
+   //while ("nom du programme qui mange"(matrice))
+   //{
+        while(tombage(matrice))
+        {
+
+        }
+    //}
 
     do
     {
         // Initialisation de la boucle
         affichage_matrice (matrice,contrat1);
+
         // Déplacement du curseur
         while(b)
         {
@@ -46,18 +50,22 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
                 case ' ':
                     matrice[curseur.y][curseur.x] = matrice[curseur.y][curseur.x] - 'A' + 'a';
                     affichage_matrice (matrice,contrat1);
-                    b = changer_de_place(matrice);
+                    b = changer_de_place(matrice,contrat1);
                     affichage_matrice (matrice,contrat1);
                     getch();
                     break;
             }
         }
 
-        //boucle while (mangeage)
-            // Appeler affiche_matrice
+        //while ("nom du programme qui mange"(matrice))
+        //{
+            //affichage_matrice (matrice,contrat1);
+            // while(tombage(matrice))
+            //{
 
-           // while(tombage)
-                // Affiche matrice
+            //}
+        //}
+
     }
     while((contrat1->coups > 0) || ((contrat1->fraises > 0) && (contrat1->pommes > 0) && (contrat1->soleils > 0) && (contrat1->oignons > 0) && (contrat1->mandarines > 0)));
 

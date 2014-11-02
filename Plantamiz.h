@@ -52,6 +52,6 @@ void affiche_transition_perdu(int transition_pos);
 void affiche_transition_gagne(int transition_pos);
 void transition(t_contrat* contrat,t_joueur* joueur);
 void sauvegarde_fichier(t_joueur*joueur);
-int changer_de_place(char matrice[10][15]);
+int changer_de_place(char matrice[10][15],t_contrat* contrat1);
 
 #endif // PLANTAMIZ_H_INCLUDED
