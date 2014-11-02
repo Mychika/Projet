@@ -54,4 +54,79 @@ void transition(t_contrat* contrat,t_joueur* joueur);
 void sauvegarde_fichier(t_joueur*joueur);
 int changer_de_place(char matrice[10][15],t_contrat* contrat1);
 
+int mange(char matrice[10][15],t_contrat* contrat1);
+    int combinaisoncolonnecinq(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonlignecinq(char matrice[10][15], t_contrat* contrat1);
+
+    //int combinaison de 4 et 4
+    int combinaisoncroixquatrequatredroite1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixquatrequatredroite2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixquatrequatregauche1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixquatrequatregauche2(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonTgauchequatrequatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTgauchequatrequatre2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitequatrequatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitequatrequatre2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubasquatrequatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubasquatrequatre2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhautquatrequatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhautquatrequatre2(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonLgauchebasquatrequatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLgauchehautquatrequatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitehautquatrequatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitebasquatrequatre(char matrice[10][15], t_contrat* contrat1);
+
+    //int combinaison de 3 et 4
+    int combinaisoncroixquatretroisgauche(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixquatretroisdroite(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixtroisquatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisoncroixtroisquatre2(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonTgauchetroisquatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTgauchetroisquatre2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTgauchequatretrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitetroisquatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitetroisquatre1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitequatretrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubasquatretrois1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubasquatretrois2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhautquatretrois1(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhautquatretrois2(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubastroisquatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhauttroisquatre(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonLgauchebastroisquatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLgauchebasquatretrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLgauchehautquatretrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLgauchehauttroisquatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitebastroisquatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitebasquatretrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitehauttroisquatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitehautquatretrois(char matrice[10][15], t_contrat* contrat1);
+
+    //int combinaison de 3 et 3
+    int combinaisoncroixtroistrois(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonTgauchetroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTdroitetroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieubastroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonTmilieuhauttroistrois(char matrice[10][15], t_contrat* contrat1);
+
+    int combinaisonLgauchebastroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLgauchehauttroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitehauttroistrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonLdroitebastroistrois(char matrice[10][15], t_contrat* contrat1);
+
+    //int combinaison de 4
+    int combinaisoncolonnequatre(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonlignetrois(char matrice[10][15], t_contrat* contrat1);
+
+    //int combinaison de 3
+    int combinaisoncolonnetrois(char matrice[10][15], t_contrat* contrat1);
+    int combinaisonlignetrois(char matrice[10][15], t_contrat* contrat1);
+
+
+
 #endif // PLANTAMIZ_H_INCLUDED
