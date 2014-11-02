@@ -19,15 +19,15 @@ int combinaisonLgauchebastroistrois(char matrice[10][15],t_contrat* contrat1) //
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(3+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(3+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(3+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(3+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(3+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(3+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(3+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(3+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(3+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(3+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -58,15 +58,15 @@ int combinaisonLgauchebasquatretrois(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -96,15 +96,15 @@ int combinaisonLgauchebastroisquatre(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -135,15 +135,15 @@ int combinaisonLgauchebasquatrequatre(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+4)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+4)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+4)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+4)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+4)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+4)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+4)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+4)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -172,15 +172,15 @@ int combinaisonLdroitebastroistrois(char matrice[10][15],t_contrat* contrat1) //
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(3+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(3+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(3+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(3+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(3+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(3+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(3+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(3+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(3+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(3+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -211,15 +211,15 @@ int combinaisonLdroitebasquatretrois(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -249,15 +249,15 @@ int combinaisonLdroitebastroisquatre(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -289,15 +289,15 @@ int combinaisonLdroitebasquatrequatre(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+4)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+4)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+4)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+4)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+4)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+4)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+4)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+4)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -327,15 +327,15 @@ int combinaisonLgauchehauttroistrois(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(3+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(3+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(3+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(3+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(3+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(3+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(3+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(3+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(3+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(3+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -367,15 +367,15 @@ int combinaisonLgauchehautquatretrois(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -407,15 +407,15 @@ int combinaisonLgauchehauttroisquatre(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -447,15 +447,15 @@ int combinaisonLgauchehautquatrequatre(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+4)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+4)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+4)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+4)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+4)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+4)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+4)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+4)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -485,15 +485,15 @@ int combinaisonLdroitehauttroistrois(char matrice[10][15],t_contrat* contrat1) /
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(3+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(3+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(3+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(3+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(3+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(3+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(3+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(3+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(3+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(3+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -524,15 +524,15 @@ int combinaisonLdroitehautquatretrois(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -563,15 +563,15 @@ int combinaisonLdroitehauttroisquatre(char matrice[10][15],t_contrat* contrat1) 
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+3)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+3)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+3)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+3)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+3)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+3)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+3)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+3)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+3)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+3)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -603,15 +603,15 @@ int combinaisonLdroitehautquatrequatre(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+(4+4)*2;
+                    case 83 : contrat1->soleils=contrat1->soleils-(4+4)*2;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+(4+4)*2;
+                    case 70 : contrat1->fraises=contrat1->fraises-(4+4)*2;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+(4+4)*2;
+                    case 80 : contrat1->pommes=contrat1->pommes-(4+4)*2;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+(4+4)*2;
+                    case 79 : contrat1->oignons=contrat1->oignons-(4+4)*2;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+(4+4)*2;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-(4+4)*2;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée

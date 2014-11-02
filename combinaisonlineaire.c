@@ -18,15 +18,15 @@ int combinaisoncolonnetrois(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+3;
+                    case 83 : contrat1->soleils=contrat1->soleils-3;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+3;
+                    case 70 : contrat1->fraises=contrat1->fraises-3;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+3;
+                    case 80 : contrat1->pommes=contrat1->pommes-3;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+3;
+                    case 79 : contrat1->oignons=contrat1->oignons-3;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+3;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-3;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -56,15 +56,15 @@ int combinaisoncolonnequatre(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+8;
+                    case 83 : contrat1->soleils=contrat1->soleils-8;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+8;
+                    case 70 : contrat1->fraises=contrat1->fraises-8;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+8;
+                    case 80 : contrat1->pommes=contrat1->pommes-8;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+8;
+                    case 79 : contrat1->oignons=contrat1->oignons-8;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+8;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-8;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -92,15 +92,15 @@ int combinaisonlignetrois(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+3;
+                    case 83 : contrat1->soleils=contrat1->soleils-3;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+3;
+                    case 70 : contrat1->fraises=contrat1->fraises-3;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+3;
+                    case 80 : contrat1->pommes=contrat1->pommes-3;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+3;
+                    case 79 : contrat1->oignons=contrat1->oignons-3;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+3;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-3;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -128,15 +128,15 @@ int combinaisonlignequatre(char matrice[10][15],t_contrat* contrat1)
                 motifidentique=matrice[i][j];
                 switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+8;
+                    case 83 : contrat1->soleils=contrat1->soleils-8;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+8;
+                    case 70 : contrat1->fraises=contrat1->fraises-8;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+8;
+                    case 80 : contrat1->pommes=contrat1->pommes-8;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+8;
+                    case 79 : contrat1->oignons=contrat1->oignons-8;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+8;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-8;
                     break;
                 }
                 return 1; //retourne une valeur pour indiquer que la combinaison s'est appliquée
@@ -168,15 +168,15 @@ int combinaisonlignecinq(char matrice[10][15],t_contrat* contrat1)
                             matrice[k][l]=' ';
                             switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+1;
+                    case 83 : contrat1->soleils=contrat1->soleils-1;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+1;
+                    case 70 : contrat1->fraises=contrat1->fraises-1;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+1;
+                    case 80 : contrat1->pommes=contrat1->pommes-1;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+1;
+                    case 79 : contrat1->oignons=contrat1->oignons-1;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+1;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-1;
                     break;
                 }
                         }
@@ -215,15 +215,15 @@ int combinaisoncolonnecinq(char matrice[10][15],t_contrat* contrat1)
                             matrice[k][l]=' ';
                             switch (motifidentique) //incrémentation du score
                 {
-                    case 83 : contrat1->soleils=contrat1->soleils+1;
+                    case 83 : contrat1->soleils=contrat1->soleils-1;
                     break;
-                    case 70 : contrat1->fraises=contrat1->fraises+1;
+                    case 70 : contrat1->fraises=contrat1->fraises-1;
                     break;
-                    case 80 : contrat1->pommes=contrat1->pommes+1;
+                    case 80 : contrat1->pommes=contrat1->pommes-1;
                     break;
-                    case 79 : contrat1->oignons=contrat1->oignons+1;
+                    case 79 : contrat1->oignons=contrat1->oignons-1;
                     break;
-                    case 77 : contrat1->mandarines=contrat1->mandarines+1;
+                    case 77 : contrat1->mandarines=contrat1->mandarines-1;
                     break;
                 }
                         }
