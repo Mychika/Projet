@@ -74,4 +74,11 @@ int mange(char matrice[10][15],t_contrat* contrat1)
     //combinaison de 3
     combinaisoncolonnetrois(matrice,contrat1);
     combinaisonlignetrois(matrice,contrat1);
+
+    if (contrat1->soleils <0) contrat1->soleils=0;
+    if (contrat1->fraises <0) contrat1->fraises=0;
+    if (contrat1->pommes <0) contrat1->pommes=0;
+    if (contrat1->oignons <0) contrat1->oignons=0;
+    if (contrat1->mandarines <0) contrat1->mandarines=0;
+
 }
