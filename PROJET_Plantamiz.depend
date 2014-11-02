@@ -51,3 +51,67 @@
 1414935228 source:c:\users\océania\desktop\documents\projet ece\projet_plantamiz\changer_de_place.c
 	"plantamiz.h"
 
+1414943222 source:c:\users\victoria\desktop\projet\affichage_menu.c
+	"plantamiz.h"
+
+1414945236 c:\users\victoria\desktop\projet\plantamiz.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	<time.h>
+
+1414943222 source:c:\users\victoria\desktop\projet\affichage_transition_gagne.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\affichage_transition_perdu.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\changer_de_place.c
+	"plantamiz.h"
+
+1414945676 source:c:\users\victoria\desktop\projet\combinaisoncroix.c
+	"plantamiz.h"
+
+1414945676 source:c:\users\victoria\desktop\projet\combinaisonl.c
+	"plantamiz.h"
+
+1414945677 source:c:\users\victoria\desktop\projet\combinaisonlineaire.c
+	"plantamiz.h"
+
+1414945677 source:c:\users\victoria\desktop\projet\combinaisont.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\creation_fichier.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\creer_et_afficher_matrice.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\initialisation_contrat.c
+	"plantamiz.h"
+
+1414946548 source:c:\users\victoria\desktop\projet\jouer.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\main.c
+	"plantamiz.h"
+
+1414945530 source:c:\users\victoria\desktop\projet\mange.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\ouverture_fichier.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\sauvegarde_fichier.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\sup_et_couleur.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\tombage.c
+	"plantamiz.h"
+
+1414943222 source:c:\users\victoria\desktop\projet\transition.c
+	"plantamiz.h"
+

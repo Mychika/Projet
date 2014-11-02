@@ -12,13 +12,14 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
     creation_matrice (matrice);
     initialisation_contrat (joueur,contrat1);
 
-   //while ("nom du programme qui mange"(matrice))
-   //{
+   while (mange(matrice,contrat1))
+   {
         while(tombage(matrice))
         {
 
+
         }
-    //}
+    }
 
     do
     {
@@ -57,14 +58,14 @@ void jouer(t_joueur* joueur,t_contrat* contrat1)
             }
         }
 
-        //while ("nom du programme qui mange"(matrice))
-        //{
-            //affichage_matrice (matrice,contrat1);
-            // while(tombage(matrice))
-            //{
+        while (mange(matrice,contrat1))
+        {
+            affichage_matrice (matrice,contrat1);
+            while(tombage(matrice))
+            {
 
-            //}
-        //}
+            }
+        }
 
     }
     while((contrat1->coups > 0) || ((contrat1->fraises > 0) && (contrat1->pommes > 0) && (contrat1->soleils > 0) && (contrat1->oignons > 0) && (contrat1->mandarines > 0)));
