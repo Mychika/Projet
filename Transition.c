@@ -66,44 +66,54 @@ void transition(t_contrat* contrat,t_joueur* joueur)
     else
     {
         joueur->niveau++;
-
-        setColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
-        printf("\n\n\n\tVous avez reussi ce niveau!!\n");
-        setColor(FOREGROUND_WHITE);
-
-        getch();
-
-        while (c)
+        if (joueur->niveau > 4)
         {
-            affiche_transition_gagne(transition_pos);
-            switch (getch())
+            setColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
+            printf("\n\n\n\tVOUS AVEZ FINI LE JEU!!\n");
+            setColor(FOREGROUND_WHITE);
+
+            getch();
+        }
+        else
+        {
+            setColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
+            printf("\n\n\n\tVous avez reussi ce niveau!!\n");
+            setColor(FOREGROUND_WHITE);
+
+            getch();
+
+            while (c)
             {
-                case '8' :
-                    transition_pos = (transition_pos + 1)% 2;
-                    break;
-
-                case '2' :
-                    transition_pos = (transition_pos + 1)% 2;
-                    break;
-
-                case ' ' :
+                affiche_transition_gagne(transition_pos);
+                switch (getch())
                 {
-                    // Différent cas en fonction de la position du curseur
-                    switch (transition_pos)
-                    {
-                        case 0 :
-                            jouer (joueur,contrat);
-                            c = 0;
-                            break;
+                    case '8' :
+                        transition_pos = (transition_pos + 1)% 2;
+                        break;
 
-                        case 1 :
-                            sauvegarde_fichier(joueur);
-                            c = 0;
-                            break;
+                    case '2' :
+                        transition_pos = (transition_pos + 1)% 2;
+                        break;
+
+                    case ' ' :
+                    {
+                        // Différent cas en fonction de la position du curseur
+                        switch (transition_pos)
+                        {
+                            case 0 :
+                                jouer (joueur,contrat);
+                                c = 0;
+                                break;
+
+                            case 1 :
+                                sauvegarde_fichier(joueur);
+                                c = 0;
+                                break;
+                        }
                     }
                 }
-            }
 
+            }
         }
 
     }
